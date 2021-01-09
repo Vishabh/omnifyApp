@@ -24,7 +24,9 @@
         console.log("submitting form");
         var formdata = $('.form').serializeArray();
         console.log(formdata);
-        
+        $.get("http://localhost/dashboard/", function(data, status){
+            console.log("Data: " + data + "\nStatus: " + status);
+        });
       });
     });
 </script>
